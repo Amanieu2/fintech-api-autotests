@@ -19,7 +19,7 @@ public final class BookingApi {
     private final RequestSpecification spec = new RequestSpecBuilder()
             .setBaseUri(Config.bookingBaseUrl())
             .setContentType(ContentType.JSON)
-            .setAccept(ContentType.JSON)
+            .setAccept("application/json")
             .addFilter(new AllureRestAssured())
             .build();
 
